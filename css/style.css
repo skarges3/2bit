@@ -3,14 +3,27 @@ section {
 	color: #E9F2FA;
 }
 
-.slide2{
-	minheight: 100vh;
+#logo {
+	max-width: 800px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.twobit h1 {
+	padding: 4em 1em 0em 1em;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.twobit{
+	min-height: 100vh;
 }
 
 .slide {
 	background-color: ;
 	min-height: 100vh;
-	padding: 2.2em 4em;
+	padding: 0;
 	padding-top: 20vh;
 	text-align: center;
 }
@@ -18,6 +31,7 @@ section {
 .slide h1 {
 	line-height: 1;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .slide h1:nth-child(1) {
@@ -195,61 +209,140 @@ a.casestudy img {
 
 @media only screen and (max-width: 500px) {
 	.slide {
-		padding: 11em 1.5em 1em 1.5em;
+		padding: 0;
 	}
 }
 
-@media only screen and (max-width: 400px) {
 
 
+@-webkit-keyframes loop {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0); }
+
+  100% {
+    -webkit-transform: translateX(-66.6%);
+    -moz-transform: translateX(-66.6%);
+    -o-transform: translateX(-66.6%);
+    transform: translateX(-66.6%); } }
+
+@-moz-keyframes loop {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0); }
+
+  100% {
+    -webkit-transform: translateX(-66.6%);
+    -moz-transform: translateX(-66.6%);
+    -o-transform: translateX(-66.6%);
+    transform: translateX(-66.6%); } }
+
+@-ms-keyframes loop {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0); }
+
+  100% {
+    -webkit-transform: translateX(-66.6%);
+    -moz-transform: translateX(-66.6%);
+    -o-transform: translateX(-66.6%);
+    transform: translateX(-66.6%); } }
+
+@keyframes loop {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0); }
+
+  100% {
+    -webkit-transform: translateX(-66.6%);
+    -moz-transform: translateX(-66.6%);
+    -o-transform: translateX(-66.6%);
+    transform: translateX(-66.6%); } }
+
+.cssanimations .marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  .cssanimations .marquee > ul {
+    list-style: none;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 300% !important;
+    height: 110px;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-animation: loop 20s linear infinite;
+    -moz-animation: loop 20s linear infinite;
+    -o-animation: loop 20s linear infinite;
+    animation: loop 20s linear infinite; }
+  .cssanimations .marquee > ul > li {
+    position: relative;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    line-height: 0;
+    letter-spacing: -0.31em;
+    float: left;
+    width: 33.333333%;
+    height: 510px;
+    overflow: hidden; }
+    .cssanimations .marquee > ul > li:before {
+      content: '';
+      position: relative;
+      height: 50%;
+      width: 0; }
+    .cssanimations .marquee > ul > li:before,
+    .cssanimations .marquee > ul > li > * {
+      vertical-align: middle;
+      display: inline-block; }
+    .cssanimations .marquee > ul > li:after {
+      content: '.';
+      display: inline-block;
+      height: 0 !important;
+      width: 100%;
+      overflow: hidden !important;
+      visibility: hidden;
+      font-size: 0;
+      word-spacing: 100%; }
+    .cssanimations .marquee > ul > li > * {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: left;
+      line-height: 1;
+      letter-spacing: 0; }
+    .cssanimations .marquee > ul > li img {
+      margin: 20px 1.6%; }
+
+.marquee {
+  border-top: 0px solid #DDD;
+  border-bottom: 0px solid #DDD; }
+  .marquee ul, .marquee li {
+    padding: 0 !important;
+    margin: 0 !important; }
+
+.marquee img {
+	width: 20%;
 }
 
-#clouds{
-	padding: 100px 0;
+@media only screen and (max-width: 600px) {
+.marquee img {
+	width: 40%;
+}
 }
 
-/*Time to finalise the cloud shape*/
-.cloud {
-	width: 200px;
-	background: transparent;
-
-	
-	position: absolute; 
-}
-
-
-/*Time to animate*/
-.x1, .x2, .x3, .x4, .x5 {
-	-webkit-animation: moveclouds 15s linear infinite;
-	-moz-animation: moveclouds 15s linear infinite;
-	-o-animation: moveclouds 15s linear infinite;
-}
-
-.x2 {
-	animation-delay: 7s;
-}
-
-.x3 {
-	animation-delay: 15s;
-}
-
-.x4 {
-	animation-delay: 27s;
-}
-
-.x5 {
-	animation-delay: 20s;
-}
-
-@-webkit-keyframes moveclouds {
-	0% {margin-left: 1000px;}
-	100% {margin-left: -1000px;}
-}
-@-moz-keyframes moveclouds {
-	0% {margin-left: 1000px;}
-	100% {margin-left: -1000px;}
-}
-@-o-keyframes moveclouds {
-	0% {margin-left: 1000px;}
-	100% {margin-left: -1000px;}
+@media only screen and (max-width: 1200px) {
+.marquee img {
+	width: 30%;
+}	
 }
