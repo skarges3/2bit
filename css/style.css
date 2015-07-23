@@ -8,8 +8,8 @@ section {
 }
 
 .slide {
-	background-color: #fff;
-	min-height: 80vh;
+	background-color: ;
+	min-height: 100vh;
 	padding: 2.2em 4em;
 	padding-top: 20vh;
 	text-align: center;
@@ -202,4 +202,54 @@ a.casestudy img {
 @media only screen and (max-width: 400px) {
 
 
+}
+
+#clouds{
+	padding: 100px 0;
+}
+
+/*Time to finalise the cloud shape*/
+.cloud {
+	width: 200px;
+	background: transparent;
+
+	
+	position: absolute; 
+}
+
+
+/*Time to animate*/
+.x1, .x2, .x3, .x4, .x5 {
+	-webkit-animation: moveclouds 15s linear infinite;
+	-moz-animation: moveclouds 15s linear infinite;
+	-o-animation: moveclouds 15s linear infinite;
+}
+
+.x2 {
+	animation-delay: 7s;
+}
+
+.x3 {
+	animation-delay: 15s;
+}
+
+.x4 {
+	animation-delay: 27s;
+}
+
+.x5 {
+	animation-delay: 20s;
+}
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
 }
