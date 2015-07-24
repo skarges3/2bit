@@ -8,6 +8,8 @@ section {
 	border: 6px solid #4034AD;
 	color: #4034AD;
 	text-align: center;
+	display: inline-block;
+	margin-bottom: 100px;
 }
 
 .start:hover {
