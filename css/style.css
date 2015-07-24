@@ -1,26 +1,28 @@
-
-
 section {
 	background-color: #fff;
 	color: #E9F2FA;
 }
 
 #logo {
-	max-width: 800px;
+	max-width: 300px;
 	margin: 0 auto;
 	box-sizing: border-box;
 	overflow: hidden;
 }
 
 .twobit h1 {
-	padding: 4em 1em 0em 1em;
+	padding: 2em 1em 0em 1em;
 	box-sizing: border-box;
 	overflow: hidden;
 	text-align: center;
 }
 
 .twobit{
-	min-height: 100vh;
+	min-height: 80vh;
+}
+
+.next {
+	background-color: #222;
 }
 
 .slide {
@@ -216,12 +218,12 @@ section {
 
 @media only screen and (max-width: 600px) {
 .marquee img {
-	width: 40%;
+	width: 40px;
 }
 }
 
 @media only screen and (max-width: 1200px) {
 .marquee img {
-	width: 30%;
+	width: 30px;
 }	
 }
