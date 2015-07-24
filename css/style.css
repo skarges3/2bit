@@ -195,7 +195,7 @@ section {
       overflow: hidden !important;
       visibility: hidden;
       font-size: 0;
-      word-spacing: 100%; }
+      word-spacing: 10%; }
     .cssanimations .marquee > ul > li > * {
       display: inline-block;
       vertical-align: middle;
@@ -213,17 +213,12 @@ section {
     margin: 0 !important; }
 
 .marquee img {
-	width: 20%;
+	width: 120px;
 }
 
-@media only screen and (max-width: 600px) {
-.marquee img {
-	width: 40px;
-}
-}
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1000px) {
 .marquee img {
-	width: 30px;
-}	
+	width: 220px;
+}
 }
