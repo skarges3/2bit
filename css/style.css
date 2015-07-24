@@ -3,6 +3,17 @@ section {
 	color: #E9F2FA;
 }
 
+.start {
+	padding: 2em;
+	border: 6px solid #4034AD;
+	color: #4034AD;
+}
+
+.start:hover {
+	background-color: #4034AD;
+	color: #fff;
+}
+
 #logo {
 	max-width: 300px;
 	margin: 0 auto;
@@ -19,6 +30,14 @@ section {
 
 .twobit{
 	min-height: 80vh;
+}
+
+.vt {
+	font-family: 'VT323' !important;
+}
+
+.pressplay {
+	font-family: 'Press Start 2P', !important;
 }
 
 .next {
@@ -207,7 +226,9 @@ section {
 
 .marquee {
   border-top: 0px solid #DDD;
-  border-bottom: 0px solid #DDD; }
+  border-bottom: 0px solid #DDD;
+	height: 250px;
+}
   .marquee ul, .marquee li {
     padding: 0 !important;
     margin: 0 !important; }
