@@ -7,6 +7,7 @@ section {
 	padding: 2em;
 	border: 6px solid #4034AD;
 	color: #4034AD;
+	text-align: center;
 }
 
 .start:hover {
@@ -22,7 +23,7 @@ section {
 }
 
 .twobit h1 {
-	padding: 2em 1em 0em 1em;
+	padding: 1em 1em 1em 1em;
 	box-sizing: border-box;
 	overflow: hidden;
 	text-align: center;
@@ -227,7 +228,7 @@ section {
 .marquee {
   border-top: 0px solid #DDD;
   border-bottom: 0px solid #DDD;
-	height: 250px;
+	height: 300px;
 }
   .marquee ul, .marquee li {
     padding: 0 !important;
